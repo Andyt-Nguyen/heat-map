@@ -1,0 +1,11 @@
+{
+  "name": "heat-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Andyt-Nguyen/heat-map.git",
+  "author": "Andrew Ty Nguyen <andyt.nguyen123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "heatmap.js": "^2.0.5"
+  }
+}
