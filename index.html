@@ -27,29 +27,44 @@
 			var dataPoint = {
 			  x: 80, // x coordinate of the datapoint, a number
 			  y: 70, // y coordinate of the datapoint, a number
-			  value: 30 // the value at datapoint(x, y)
+			  value: 10 // the value at datapoint(x, y)
 			};
 			var dataPoint2 = {
 			  x: 40, // x coordinate of the datapoint, a number
 			  y: 45, // y coordinate of the datapoint, a number
-			  value: 50// the value at datapoint(x, y)
+			  value: 10// the value at datapoint(x, y)
 			};
 			var dataPoint3 = {
 			  x: 100, // x coordinate of the datapoint, a number
 			  y: 100, // y coordinate of the datapoint, a number
-			  value: 30 // the value at datapoint(x, y)
+			  value: 10 // the value at datapoint(x, y)
 			};
 			var dataPoint3 = {
 			  x: 200, // x coordinate of the datapoint, a number
 			  y: 300, // y coordinate of the datapoint, a number
-			  value: 30 // the value at datapoint(x, y)
+			  value: 10 // the value at datapoint(x, y)
 			};
-			var dataList = [dataPoint, dataPoint2, dataPoint3]
+			var dataPoint4 = {
+			  x: 210, // x coordinate of the datapoint, a number
+			  y: 320, // y coordinate of the datapoint, a number
+			  value: 10 // the value at datapoint(x, y)
+			};
+			var dataPoint4 = {
+			  x: 210, // x coordinate of the datapoint, a number
+			  y: 330, // y coordinate of the datapoint, a number
+			  value: 10 // the value at datapoint(x, y)
+			};
+			var dataPoint5 = {
+			  x: 215, // x coordinate of the datapoint, a number
+			  y: 330, // y coordinate of the datapoint, a number
+			  value: 10 // the value at datapoint(x, y)
+			};
+			var dataList = [dataPoint, dataPoint2, dataPoint3, dataPoint4, dataPoint5]
 
 			// document.querySelector('.demo-wrapper').onclick = function(ev) {
 				heatmapInstance.setData({
 					// container: document.querySelector(".demo-wrapper"),
-					max: 50,
+					max: 20,
 					// min: 0,
 					data: dataList
 				});
