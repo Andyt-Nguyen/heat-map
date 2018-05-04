@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Heat Map</title>
+	</head>
+
+	<body>
+		<div class="demo-wrapper" style="background:black">
+       <div class="text-bg">
+       	 much interesting click zone here!
+      </div>
+
+      <div class="heatmap" style="position: relative; background:black; height:400px">
+      	<canvas class="heatmap-canvas" width="834" height="400" style="position: absolute; left: 0px; top: 0px;"></canvas>
+			</div>
+    </div>
+
+		<script src="./node_modules/heatmap.js/build/heatmap.min.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			// create instance
+			var heatmapInstance = h337.create({
+				container: document.querySelector('.heatmap'),
+				radius: 90
+			});
+
+			// For static
+
+
+			document.querySelector('.demo-wrapper').onclick = function(ev) {
+				heatmapInstance.addData({
+					container: document.querySelector(".demo-wrapper"),
+					x: ev.layerX,
+					y: ev.layerY,
+					value: 10
+				});
+				console.log(ev)
+			};
+		</script>
+	</body>
+
+</html>
